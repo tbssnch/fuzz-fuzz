@@ -1,0 +1,22 @@
+.Container {
+  width: 100%;
+  height: 100vh;
+  margin: 1em auto;
+  overflow: hidden;
+  background: white;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.Marquee {
+  top: 6em;
+  position: relative;
+  box-sizing: border-box;
+  animation: Marquee 40s linear infinite;
+}
+
+@keyframes Marquee {
+  0%   { top:   100em }
+  100% { top: -11em }
+}
