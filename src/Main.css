@@ -1,0 +1,33 @@
+.Container {
+  width: 75%;
+  height: 80vh;
+  overflow: hidden;
+  text-align: center;
+  box-sizing: border-box;
+  border: 15px solid #bc5e46;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 60px;
+}
+
+.Marquee {
+  top: 6em;
+  position: relative;
+  box-sizing: border-box;
+  animation: Marquee 80s linear infinite;
+}
+
+.Marquee p {
+  font-size: 80px;
+  color: #BC5E46;
+  font-kerning: none;
+}
+
+
+@keyframes Marquee {
+  0%   { top:   40em }
+  100% { top: -300em }
+}
