@@ -1,4 +1,4 @@
-.Container {
+.PartyTimeContainer {
   width: 75%;
   height: 80vh;
   overflow: hidden;
@@ -13,21 +13,21 @@
   padding: 60px;
 }
 
-.Marquee {
+.PartyTimeText {
   top: 6em;
   position: relative;
   box-sizing: border-box;
-  animation: Marquee 80s linear infinite;
+  animation: PartyTimeText 80s linear infinite;
 }
 
-.Marquee p {
+.PartyTimeText p {
   font-size: 80px;
   color: #BC5E46;
   font-kerning: none;
 }
 
 
-@keyframes Marquee {
+@keyframes PartyTimeText {
   0%   { top:   40em }
   100% { top: -300em }
 }

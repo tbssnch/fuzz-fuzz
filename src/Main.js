@@ -1,11 +1,39 @@
 import React, { Component } from 'react';
 import './Main.css';
 
+
+
 class Main extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {isToggleOn: true};
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState(prevState => ({
+      isToggleOn: !prevState.isToggleOn
+    }));
+  }
+
+
   render() {
-    return (
-      <div className="Container">
-        <div className="Marquee">
+    let toggle = this.props.isToggleOn;
+    if (this.state.isToggleOn) {
+      return (
+        <div className="PartyNotYetContainer">
+          <div className="PartyNotYetText">
+            <button onClick={this.handleClick}>
+              {this.state.isToggleOn ? 'ON' : 'OFF'}
+            </button>
+          </div>
+        </div>
+      )
+    }
+    else return (
+      <div className="PartyTimeContainer">
+        <div className="PartyTimeText">
           <p>oh, hey.</p>
 
           <p>fancy seeing you here.</p>
