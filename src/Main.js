@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './Main.css';
+import Animation from './Animation';
+
 
 
 
@@ -18,22 +20,25 @@ class Main extends Component {
   }
 
 
+  // <p className="start-text">Vestibulum eleifend elementum est, non porttitor elit sollicitudin sed?</p>
+  // <button className="start-button" onClick={this.handleClick}>
+  //   {this.state.isToggleOn ? 'CLICK ME' : 'OFF'}
+  // </button>
   render() {
     let toggle = this.props.isToggleOn;
     if (this.state.isToggleOn) {
       return (
-        <div className="PartyNotYetContainer">
-          <div className="PartyNotYetText">
-            <button onClick={this.handleClick}>
-              {this.state.isToggleOn ? 'ON' : 'OFF'}
-            </button>
+        <div className="party-not-yet-container">
+
+          <div className="party-not-yet-body">
+            <Animation />
           </div>
         </div>
       )
     }
     else return (
-      <div className="PartyTimeContainer">
-        <div className="PartyTimeText">
+      <div className="party-time-container">
+        <div className="party-time-text">
           <p>oh, hey.</p>
 
           <p>fancy seeing you here.</p>

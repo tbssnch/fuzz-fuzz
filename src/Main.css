@@ -1,4 +1,42 @@
-.PartyTimeContainer {
+.party-not-yet-container {
+  width: 75%;
+  height: 80vh;
+  overflow: hidden;
+  text-align: center;
+  box-sizing: border-box;
+  border: 15px solid #bc5e46;
+  background: transparent;
+  margin: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.party-not-yet-body {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.start-text {
+  font-size: 30px;
+  color: #bc5e46;
+  margin-bottom: 80px;
+}
+.start-button {
+  height: 80px;
+  width: 200px;
+  border: 10px solid #bc5e46;
+  background: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #bc5e46;
+}
+
+
+.party-time-container {
   width: 75%;
   height: 80vh;
   overflow: hidden;
@@ -13,21 +51,21 @@
   padding: 60px;
 }
 
-.PartyTimeText {
+.party-time-text {
   top: 6em;
   position: relative;
   box-sizing: border-box;
-  animation: PartyTimeText 80s linear infinite;
+  animation: party-time-text 80s linear infinite;
 }
 
-.PartyTimeText p {
+.party-time-text p {
   font-size: 80px;
   color: #BC5E46;
   font-kerning: none;
 }
 
 
-@keyframes PartyTimeText {
+@keyframes party-time-text {
   0%   { top:   40em }
   100% { top: -300em }
 }
