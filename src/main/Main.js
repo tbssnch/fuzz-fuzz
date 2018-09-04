@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './Main.css';
-import Animation from './Animation';
+import Animation from './../animation/Animation';
+import Transition from './../Transition';
+import { CSSTransitionGroup } from 'react-transition-group';
+
 
 
 
@@ -20,10 +23,6 @@ class Main extends Component {
   }
 
 
-  // <p className="start-text">Vestibulum eleifend elementum est, non porttitor elit sollicitudin sed?</p>
-  // <button className="start-button" onClick={this.handleClick}>
-  //   {this.state.isToggleOn ? 'CLICK ME' : 'OFF'}
-  // </button>
   render() {
     let toggle = this.props.isToggleOn;
     if (this.state.isToggleOn) {
@@ -31,8 +30,22 @@ class Main extends Component {
         <div className="party-not-yet-container">
 
           <div className="party-not-yet-body">
+            <div>
             <Animation />
-          </div>
+
+              <div className="start-text">
+                <p>hey there, fuzzco.</p>
+                <p>im tyler.</p>
+                <p>i would love to work with you.</p>
+              </div>
+
+
+              </div>
+            </div>
+            <button className="start-button" onClick={this.handleClick}>
+              {this.state.isToggleOn}
+              <svg className="button-arrow" viewBox="0 0 404.23 371.75"><path class="d" d="M401.61,192.43,224.46,369.15a9,9,0,0,1-12.66,0L176,333.27a9,9,0,0,1,0-12.66l100.7-100.45H8a8,8,0,0,1-8-8V159.59a8,8,0,0,1,8-8H276.67L176.37,51a9,9,0,0,1,0-12.66L212.25,2.6a9,9,0,0,1,12.66,0L401.63,179.77A9,9,0,0,1,401.61,192.43Z"/></svg>
+            </button>
         </div>
       )
     }

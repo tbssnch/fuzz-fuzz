@@ -1,3 +1,4 @@
+
 .party-not-yet-container {
   width: 75%;
   height: 80vh;
@@ -14,27 +15,45 @@
 }
 
 .party-not-yet-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  /* transform: translate(-50%, -50%);
   top: 50%;
-  left: 50%;
+  left: 50%; */
 }
 
 .start-text {
   font-size: 30px;
-  color: #bc5e46;
-  margin-bottom: 80px;
-}
-.start-button {
-  height: 80px;
-  width: 200px;
-  border: 10px solid #bc5e46;
-  background: none;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  color: #bc5e46;
+  color: #ce6e6e;
+  line-height: 40%;
+  font-kerning: normal;
 }
 
+.start-button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  height: 75px;
+  width: 75px;
+  border: 8px solid #ce6e6e;
+  background: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 80px;
+  color: #3878ff;
+  border-radius: 100%;
+}
+.button-arrow {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  fill: #3878ff;
+  width: 40px;
+}
 
 .party-time-container {
   width: 75%;
@@ -42,7 +61,7 @@
   overflow: hidden;
   text-align: center;
   box-sizing: border-box;
-  border: 15px solid #bc5e46;
+  border: 15px solid #ce6e6e;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -60,7 +79,7 @@
 
 .party-time-text p {
   font-size: 80px;
-  color: #BC5E46;
+  color: #ce6e6e;
   font-kerning: none;
 }
 

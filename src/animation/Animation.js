@@ -5,9 +5,6 @@ import './Animation.css';
 class Animation extends Component {
 
 
-componentDidMount() {
-
-}
   render() {
     return (
 
