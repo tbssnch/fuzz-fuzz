@@ -5,7 +5,7 @@
   overflow: hidden;
   text-align: center;
   box-sizing: border-box;
-  border: 15px solid #bc5e46;
+  border: 15px solid #ce6e6e;
   background: transparent;
   margin: 0;
   position: absolute;
@@ -33,6 +33,14 @@
   font-kerning: normal;
 }
 
+.button-container {
+  /* bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  align-self: flex-end; */
+}
+
 .start-button {
   position: absolute;
   bottom: 30px;
@@ -46,6 +54,7 @@
   color: #3878ff;
   border-radius: 100%;
 }
+
 .button-arrow {
   position: absolute;
   transform: translate(-50%, -50%);
@@ -55,11 +64,37 @@
   width: 40px;
 }
 
+.back-button-arrow {
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(180deg);
+  top: 50%;
+  left: 50%;
+  fill: #3878ff;
+  width: 40px;
+}
+
+.back-button {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  height: 75px;
+  width: 75px;
+  border: 8px solid #ce6e6e;
+  background: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 80px;
+  color: #3878ff;
+  border-radius: 100%;
+}
+
+button:focus {
+  outline: 0;
+}
+
 .party-time-container {
   width: 75%;
   height: 80vh;
   overflow: hidden;
-  text-align: center;
   box-sizing: border-box;
   border: 15px solid #ce6e6e;
   margin: 0;
@@ -71,20 +106,51 @@
 }
 
 .party-time-text {
-  top: 6em;
-  position: relative;
+  /* top: 6em; */
+  position: absolute;
+  width: 75%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* padding: 60px; */
+  /* position: relative; */
   box-sizing: border-box;
-  animation: party-time-text 80s linear infinite;
+  /* animation: party-time-text 80s linear infinite; */
 }
 
-.party-time-text p {
-  font-size: 80px;
+.party-time-text h1 {
+  font-size: 35px;
   color: #ce6e6e;
   font-kerning: none;
+  line-height: 50%;
 }
 
+.title-border {
+  width: 100%;
+  height: 6px;
+  background: #3878ff;
+  margin-top: -25px;
+}
+.party-time-answer {
+  width: 100%;
+  margin-top: 30px;
+}
+.party-time-answer p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #ce6e6e;
+  line-height: 150%;
+}
+.signature {
+  margin-left: 100px;
+}
 
-@keyframes party-time-text {
+.signature-svg {
+  width: 200px;
+  fill: #3878ff;
+}
+
+/* @keyframes party-time-text {
   0%   { top:   40em }
   100% { top: -300em }
-}
+} */
