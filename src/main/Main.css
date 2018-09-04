@@ -93,7 +93,7 @@ button:focus {
 
 .party-time-container {
   width: 75%;
-  height: 80vh;
+  height: 80%;
   overflow: hidden;
   box-sizing: border-box;
   border: 15px solid #ce6e6e;
@@ -142,7 +142,7 @@ button:focus {
   line-height: 150%;
 }
 .signature {
-  margin-left: 100px;
+  margin-left: 350px;
 }
 
 .signature-svg {
