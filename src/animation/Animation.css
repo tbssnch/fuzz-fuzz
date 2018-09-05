@@ -6,15 +6,15 @@
 .a {
   stroke-dasharray: 2000;
 	stroke-dashoffset: 2000;
-  stroke: #3878ff;
-	animation: blue-dash 3s ease-in forwards, blue-fill 4s ease-in forwards;
+  stroke: rgba(56, 120, 255, 1.0);
+	animation: blue-dash 2s ease-in forwards, blue-fill 3s ease-in forwards;
 }
 
 .b {
   stroke-dasharray: 2000;
 	stroke-dashoffset: 2000;
-  stroke: #ce6e6e;
-  animation: red-dash 2s ease-in forwards, red-fill 3s ease forwards;
+  /* stroke: rgba(206, 110, 110, 1.0); */
+  animation: red-dash 3s ease-in forwards, red-fill 4s ease forwards;
 }
 
 @keyframes blue-dash {
@@ -31,18 +31,18 @@
 
 @keyframes blue-fill {
   0% {
-    fill: none;
+    fill: rgba(56, 120, 255, 0.0);
   }
   100% {
-    fill: #3878ff;
+    fill: rgba(56, 120, 255, 1.0);
   }
 }
 
 @keyframes red-fill {
   0% {
-    fill: none;
+    fill: rgba(206, 110, 110, 0.0);
   }
   100% {
-    fill: #ce6e6e;
+    fill: rgba(206, 110, 110, 1.0);
   }
 }

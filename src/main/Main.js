@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './Main.css';
 import Animation from './../animation/Animation';
-import Transition from './../Transition';
-import { CSSTransitionGroup } from 'react-transition-group';
 
 
 
@@ -11,7 +9,7 @@ import { CSSTransitionGroup } from 'react-transition-group';
 class Main extends Component {
   constructor(props) {
     super(props);
-    this.state = {isToggleOn: false};
+    this.state = {isToggleOn: true};
 
 
     this.handleClick = this.handleClick.bind(this);
@@ -65,8 +63,8 @@ class Main extends Component {
           <div className="party-time-answer">
             <p>oh good, youre here.</p>
             <p>i thought that i would have a little fun answering this question, so i put this together.</p>
-            <p>which actually brings me to my first point. i like fun. sure, everyone likes fun, but i like to bring it into my work as well.</p>
-            <p>one of my favorite feelings is that oh so sweet relief of solving a problem. programming is fun. im challenged and pushed into learning new things every day. i like that.</p>
+            <p>oh look, a segway. i like fun. sure, everyone likes fun, but i like to bring it into my work as well.</p>
+            <p>i enjoy programming. one of my favorite feelings is that oh so sweet relief of solving a problem. im challenged and pushed into learning new things every day. i like that.</p>
             <p>im passionate about the work that i do and i hope to be able to contribute to your team.</p>
             <p>i look forward to connecting with you!</p>
             <div className="signature">
@@ -75,13 +73,12 @@ class Main extends Component {
             </div>
           </div>
         </div>
-        <div className="button-container">
-          <button className="back-button" onClick={this.handleClick}>
-            {this.state.isToggleOn}
-            <svg className="back-button-arrow" viewBox="0 0 404.23 371.75"><path class="d" d="M401.61,192.43,224.46,369.15a9,9,0,0,1-12.66,0L176,333.27a9,9,0,0,1,0-12.66l100.7-100.45H8a8,8,0,0,1-8-8V159.59a8,8,0,0,1,8-8H276.67L176.37,51a9,9,0,0,1,0-12.66L212.25,2.6a9,9,0,0,1,12.66,0L401.63,179.77A9,9,0,0,1,401.61,192.43Z"/></svg>
-          </button>
-        </div>
+        <button className="back-button" onClick={this.handleClick}>
+          {this.state.isToggleOn}
+          <svg className="back-button-arrow" viewBox="0 0 404.23 371.75"><path class="d" d="M401.61,192.43,224.46,369.15a9,9,0,0,1-12.66,0L176,333.27a9,9,0,0,1,0-12.66l100.7-100.45H8a8,8,0,0,1-8-8V159.59a8,8,0,0,1,8-8H276.67L176.37,51a9,9,0,0,1,0-12.66L212.25,2.6a9,9,0,0,1,12.66,0L401.63,179.77A9,9,0,0,1,401.61,192.43Z"/></svg>
+        </button>
       </div>
+
     )
   }
 
