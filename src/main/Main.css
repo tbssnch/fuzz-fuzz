@@ -182,7 +182,7 @@ button:focus {
 
 @media screen and (max-width: 768px) {
   .signature {
-    margin-left: 75px;;
+    margin-left: 0;
   }
 }
 
