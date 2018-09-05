@@ -23,33 +23,23 @@ class Main extends Component {
 
 
   render() {
-    let toggle = this.props.isToggleOn;
+    // let toggle = this.props.isToggleOn;
     if (this.state.isToggleOn) {
       return (
         <div className="party-not-yet-container">
-
           <div className="party-not-yet-body">
-            <div>
-            <Animation />
-
+              <Animation />
               <div className="start-text">
-                <p>hey there, fuzzco.</p>
-                <p>im tyler.</p>
+                <p>hey there, Fuzzco.</p>
+                <p>i'm tyler.</p>
                 <p>i would love to work with you.</p>
               </div>
-
-
-              </div>
             </div>
-            <div className="button-container">
-
-
-
+            <div className="start-button-container">
               <button className="start-button" onClick={this.handleClick}>
                 {this.state.isToggleOn}
                 <svg className="button-arrow" viewBox="0 0 404.23 371.75"><path class="d" d="M401.61,192.43,224.46,369.15a9,9,0,0,1-12.66,0L176,333.27a9,9,0,0,1,0-12.66l100.7-100.45H8a8,8,0,0,1-8-8V159.59a8,8,0,0,1,8-8H276.67L176.37,51a9,9,0,0,1,0-12.66L212.25,2.6a9,9,0,0,1,12.66,0L401.63,179.77A9,9,0,0,1,401.61,192.43Z"/></svg>
               </button>
-
             </div>
         </div>
       )
@@ -58,14 +48,17 @@ class Main extends Component {
       return (
       <div className="party-time-container">
         <div className="party-time-text">
-          <h1>why you cant live without me</h1>
+          <h1>why you can't live without me</h1>
           <div className="title-border"></div>
           <div className="party-time-answer">
-            <p>oh good, youre here.</p>
-            <p>i thought that i would have a little fun answering this question, so i put this together.</p>
-            <p>oh look, a segway. i like fun. sure, everyone likes fun, but i like to bring it into my work as well.</p>
-            <p>i enjoy programming. one of my favorite feelings is that oh so sweet relief of solving a problem. im challenged and pushed into learning new things every day. i like that.</p>
-            <p>im passionate about the work that i do and i hope to be able to contribute to your team.</p>
+            <p>oh good, you're here.</p>
+            <p>i thought that i would have a little fun answering this question, so i built this.</p>
+            <p>oh look, a segway. i like fun.</p>
+            <p>sure, everyone likes fun, but i like to bring it into my work as well.</p>
+            <p>i enjoy programming. one of my favorite feelings is that oh so sweet relief of solving a problem. i'm challenged and pushed into learning new things every day. i like that.</p>
+            <p>i also get to have some adventure with it. there are endless possibilities of technologies to explore and i find that exciting. i actually went off on a little bit of an excursion putting this whole thing together.</p>
+            <p>i'm passionate about the work that i do. i take pride in building products that are both functional and aesthetically thoughtful.</p>
+            <p>i admire the work that Fuzzco does and i hope to contribute to your team.</p>
             <p>i look forward to connecting with you!</p>
             <div className="signature">
               <p>best,</p>
@@ -73,10 +66,12 @@ class Main extends Component {
             </div>
           </div>
         </div>
-        <button className="back-button" onClick={this.handleClick}>
-          {this.state.isToggleOn}
-          <svg className="back-button-arrow" viewBox="0 0 404.23 371.75"><path class="d" d="M401.61,192.43,224.46,369.15a9,9,0,0,1-12.66,0L176,333.27a9,9,0,0,1,0-12.66l100.7-100.45H8a8,8,0,0,1-8-8V159.59a8,8,0,0,1,8-8H276.67L176.37,51a9,9,0,0,1,0-12.66L212.25,2.6a9,9,0,0,1,12.66,0L401.63,179.77A9,9,0,0,1,401.61,192.43Z"/></svg>
-        </button>
+        <div className="back-container">
+          <button className="back-button" onClick={this.handleClick}>
+            {this.state.isToggleOn}
+            <svg className="back-button-arrow" viewBox="0 0 404.23 371.75"><path class="d" d="M401.61,192.43,224.46,369.15a9,9,0,0,1-12.66,0L176,333.27a9,9,0,0,1,0-12.66l100.7-100.45H8a8,8,0,0,1-8-8V159.59a8,8,0,0,1,8-8H276.67L176.37,51a9,9,0,0,1,0-12.66L212.25,2.6a9,9,0,0,1,12.66,0L401.63,179.77A9,9,0,0,1,401.61,192.43Z"/></svg>
+          </button>
+        </div>
       </div>
 
     )
